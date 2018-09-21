@@ -1,9 +1,9 @@
-def prime?(int)
-  if int <= 1 
-    return false
-  elsif int <= 3
-    return true
-  elsif int % 2 == 0 or int % 3 == 0
-    return false
-  end
+def prime?(integer)
+    return false if integer < 2
+    (2..integer - 1).each do |x|
+        if (integer % x) == 0
+            return false
+        end
+    end
+    true
 end
