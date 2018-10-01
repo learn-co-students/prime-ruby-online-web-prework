@@ -2,6 +2,12 @@
 def prime?(integer)
   if number < 2           
     false         
-  end        
+  end     
+  range = (2...integer)
+  for i in range
+    if integer % i == 0   
+      false
+    end
+  end
 end
 
