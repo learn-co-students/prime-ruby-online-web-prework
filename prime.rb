@@ -1,12 +1,7 @@
 # Add  code here!
 def prime?(integer)
-  range = (2..integer - 1)
-  range.each do |x|
-    if(integer % x == 0)
-      false
-    else
-      true
-    end
-  end
+  if number < 2           # If the num is less than 2 its not prime
+    return false          # return false 
+  end        
 end
 
