@@ -1,6 +1,6 @@
 # Add  code here!
 def prime?(integer)
-  if number < 2           
+  if integer < 2           
     false         
   end     
   range = (2...integer)
