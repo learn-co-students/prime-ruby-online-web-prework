@@ -6,9 +6,8 @@ def prime?(integer)
   for i in (2..integer)
     if integer % i == 0   
       false
-    else
-      true
     end
+    true
   end
 end
 
