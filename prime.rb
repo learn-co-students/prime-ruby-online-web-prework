@@ -9,4 +9,4 @@ def prime?(integer)
       return false        # to itself then it is not prime  
     end
 end
-
+end
