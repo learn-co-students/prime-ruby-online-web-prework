@@ -1,12 +1,11 @@
 # Add  code here!
-def prime?(num)
+def prime?(integer)
 
-  (2..num-1).each do |x|
-    if(num % x) == 0
+  range = (2..integer - 1)
+  range.each do |x|
+    if(integer % x == 0)
       false
-    elsif (num < 2)
-     false 
-    end
-  end
-  true
+    else
+      true
 end
+
