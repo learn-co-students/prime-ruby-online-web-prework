@@ -1,11 +1,11 @@
 # Add  code here!
 def prime?(num)
-    (2..num-1).each do |check|
-      (num % check).each do |check|
-        if(num % check) == 0
-          false
+    return false if integer < 2
+    (2..integer - 1).each do |x|
+        if (integer % x) == 0
+            return false
         end
     end
-  true
+    true
 end
     
