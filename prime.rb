@@ -3,8 +3,8 @@ def prime?(integer)
   if integer < 2           
     false         
   end     
-  range = (2...integer)
-  for i in range
+
+  for i in (2..integer)
     if integer % i == 0   
       false
     else
