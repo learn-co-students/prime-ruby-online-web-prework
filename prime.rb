@@ -1,5 +1,3 @@
-# Add  code here!
-
 def prime?(integer)
   if integer <= 1
     return false
@@ -10,7 +8,5 @@ def prime?(integer)
       return false
     end
   end
-  return true
+  true
 end
-
-
