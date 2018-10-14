@@ -1,8 +1,8 @@
 # Add  code here!
-def prime?(integer)
-    return false if integer < 2
-    (2..integer - 1).each do |x|
-        if (integer % x) == 0
+def prime?(int)
+    return false if int < 2
+    (2..int - 1).each do |x|
+        if (int % x) == 0
             return false
         end
     end
