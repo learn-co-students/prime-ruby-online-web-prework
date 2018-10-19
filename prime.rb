@@ -1,9 +1,15 @@
 def prime?(number)
-  if number >= 2
-    (2..number - 1).all? do |x|
-      number % x != 0
-    end
-  else
+  if number < 2
     return false
   end
-end # Add  code here!
+
+  i = 2
+  while i < number
+    if number % i == 0
+      return false
+    end
+    i += 1
+  end
+  return true
+end
+     # Add  code here!
