@@ -1,4 +1,6 @@
-# Add  code here!
+require 'benchmark'
+require 'prime'
+
 
 def prime?(num)
 
@@ -19,4 +21,6 @@ def prime?(num)
   return true
 end
 
-puts prime?(-5)
+puts Benchmark.measure {puts prime?(15485863)}
+
+puts Benchmark.measure {puts 15485863.prime?}
