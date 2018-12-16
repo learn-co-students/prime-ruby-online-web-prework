@@ -1,21 +1,21 @@
 def prime?(num)
-    if num <2
+    if num <=1
         return false
     end
-    if num == 2 or 3
+    if num ==2 ||3
       return true
     end
-
-n=2
-  while  (n<=Integer.sqrt(num))
+n=1
+  while  (n < num/2)
 
   if num  % n ==0
    return  false
-  else
+ else
        return true
   end
   n=n+1
   end
+
   end
 #Set N=2.
 #Divide P by N and find the remainder R.
