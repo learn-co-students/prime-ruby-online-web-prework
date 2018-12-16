@@ -1,15 +1,22 @@
 def prime?(num)
-lopp
+    if num <2
+        return false
+    end
+    if num == 2 or 3
+      return true
+    end
+
 n=2
-  while num  % n = prime
-  if prime== 0
-    break
-  elsif n>= num
-    puts "#{num}is prime"
+  while  (n<=Integer.sqrt(num))
 
-end
-
-end
+  if num  % n ==0
+   return  false
+  else
+       return true
+  end
+  n=n+1
+  end
+  end
 #Set N=2.
 #Divide P by N and find the remainder R.
 #If R is zero, P is not prime. Exit.
