@@ -1,22 +1,12 @@
 def prime?(num)
-    if num <=1
-        return false
+  if num < 0 or num == 0 or num == 1
+    return false
+  else
+    (2..num-1).to_a.all? do |possible_factor|
+      num % possible_factor != 0
     end
-    if num ==2 ||3
-      return true
-    end
-n=1
-  while  (n < num/2)
-
-  if num  % n ==0
-   return  false
- else
-       return true
   end
-  n=n+1
-  end
-
-  end
+end
 #Set N=2.
 #Divide P by N and find the remainder R.
 #If R is zero, P is not prime. Exit.
