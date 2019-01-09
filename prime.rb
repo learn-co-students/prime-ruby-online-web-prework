@@ -10,6 +10,10 @@ numbers = Array.new(number) # makes an array as with as many elements as the num
 
 def is_multiple?(number)
   numbers = Array.new(number)
+  numbers.each do |number|
+    numbers << "#{number}"
+    numbers -= 1
+  end
 end
 
 
