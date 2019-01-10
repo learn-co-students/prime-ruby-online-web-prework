@@ -1,24 +1,22 @@
-#  See if an integer n can be divided by each number in turn that is less than n
+# Before writing a method, I should ask myself 4 questions:
 
-# A simple but slow method of checking the primality of a given number n, called trial division, tests whether n is a multiple of any integer between 2 and square root of n
+# 1. What is the method called on? The general scope
+# 2. What arguments does the method take? Takes a number as an argument
+# 3. What does the method do? It checks if the argument is a prime number
+# 4. What does the return value of the method? true or false
 
-# How do I know if a number is a multiple of 3?
-# Divisibility by 3 or 9. First, take any number (for this example it will be 492) and add together each digit in the number (4 + 9 + 2 = 15). Then take that sum (15) and determine if it is divisible by 3. The original number is divisible by 3 (or 9) if and only if the sum of its digits is divisible by 3 (or 9).
-
-number = 492
-# numbers = (2..number).to_a
-
-def split_number_digits_into_array(number)
-  number_array = number.to_s.split('')
-end
-
-def add_digits_together(number)
-  number_array = split_number_digits_into_array(number)
-  number_of_digits = number_array.size
-end
-
-
+# Prime numbers can only be divided evenly (without remainder) by or 1 or itself.
 
 def prime?(number)
+ # return false if number is not a whole number
+ return false if !number.integer?
 
+ # return false if number is under 2
+ return false if number < 2
+
+ # return false if the number can be divided evenly by any number preceding the number
+ (2..number-1).each {|int| return false if number % int == 0}
+
+ # returns true if the number cannot be divided evenly by any number preceding it
+ true
 end
