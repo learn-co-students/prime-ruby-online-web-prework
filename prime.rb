@@ -1,1 +1,8 @@
-# Add  code here!
+def prime?(integer)
+  if  Prime.prime?(integer)
+    true
+  else
+    false 
+
+  end
+end
