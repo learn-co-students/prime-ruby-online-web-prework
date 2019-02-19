@@ -2,8 +2,10 @@
 def prime?(num)
   if num <= 1
     return false
+    
   elsif num == 2 || num == 3
     return true
+    
   else
     for n in (2..num-1) do
       if num % n == 0
@@ -11,5 +13,6 @@ def prime?(num)
       end
     end
   end
+  
   return true
 end
