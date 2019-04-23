@@ -6,11 +6,11 @@ def prime?(num)
   isPrime = false
   else 
   isPrime = true
-  primep(num)
+  prime_positive_only(num)
 end
 end
 
-def primep(num)
+def prime_positive_only(num)
 isPrime = true
   range = (2..Math.sqrt(num)).to_a
   for counter in range do 
