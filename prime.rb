@@ -8,9 +8,3 @@ def prime? (i)
 end
 
 
-#prime numbers can only be divided evenly no remainder by one or itself
-
-#example prime numbers, 2,19,67
-#(should return true)
-
-#not prime numbers, 1, -5, 100, #22 (should return false)
