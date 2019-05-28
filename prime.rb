@@ -1,14 +1,17 @@
 def prime?(int)
-  range = (2...int).to_a
+  return false if int <= 1
+
+  range = (2...int)
   count = 0
-  range.each do |idx1|
-    range.each do |idx2|
-      count += 1 if idx2 != idx1 && idx2 % idx1 == 0
-    end
+
+  range.each do |idx|
+    count += 1 if int % idx == 0
   end
+
   if count == 0
     return true
   else
     return false
   end
+
 end
