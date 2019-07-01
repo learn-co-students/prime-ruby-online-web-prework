@@ -1,5 +1,4 @@
-require_relative './spec_helper'
-require_relative '../prime.rb'
+require_relative '../prime'
 
 describe "prime?" do
   it 'returns true for prime numbers' do
